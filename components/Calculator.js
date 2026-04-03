@@ -7,10 +7,6 @@ export default function Calculator() {
     if (display === "0") {
       if (/[0-9]/.test(value)) {
         setDisplay(value);
-      } else if (value === ".") {
-        setDisplay("0.");
-      } else if (value === "E") {
-        setDisplay("0E");
       } else {
         setDisplay("0" + value);
       }
@@ -34,22 +30,10 @@ export default function Calculator() {
   };
 
   const buttons = [
-    "7",
-    "8",
-    "9",
-    "/",
-    "4",
-    "5",
-    "6",
-    "*",
-    "1",
-    "2",
-    "3",
-    "-",
-    "0",
-    "E",
-    "C",
-    "+",
+    "7", "8", "9", "/",
+    "4", "5", "6", "*",
+    "1", "2", "3", "-",
+    "0", "C", "+"
   ];
 
   return (
