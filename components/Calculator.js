@@ -7,10 +7,6 @@ export default function Calculator() {
     if (display === "0") {
       if (/[0-9]/.test(value)) {
         setDisplay(value);
-      } else if (value === ".") {
-        setDisplay("0.");
-      } else if (value === "E") {
-        setDisplay("0E");
       } else {
         setDisplay("0" + value);
       }
